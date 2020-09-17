@@ -1,0 +1,309 @@
+/* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} */
+
+/* gris oscuro = #1d252c 
+** gris claro = #626262
+** background gris = #1b2127 
+** celeste = #026fff
+*/
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+h1{
+    margin: 0;
+    font-size: 4rem;
+    line-height: 4.5rem;
+    font-weight: normal;
+    letter-spacing: -.2rem;
+    color: white;
+    /* text-transform: uppercase;
+    text-decoration: underline; */
+}
+
+h1 strong{
+    color: #026fff;
+}
+
+h2{
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+}
+
+ol, ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure{
+    margin: 0;
+}
+
+.header{
+    background-color: #1b2127;
+    color: white;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 9rem;
+}
+
+.container{
+    /* border: 0.1rem solid red; */
+    width: 100rem;
+    margin: 0 auto;
+    height: inherit;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    flex-wrap: inherit;
+}
+
+.menu { /* .menu hereda de .header */
+  height: inherit;
+}
+
+.header ol { /* .header ol hereda de .menu */
+  display: flex;
+  height: inherit;
+}
+
+.header ol li { /* .header ol li hereda de .header ol */
+  height: inherit;
+}
+
+.header a { /* .header a hereda de .header ol li */
+  color: white;
+  text-decoration: none;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.hero{
+    height: 30rem;
+    /* background-image: url('../images/hero.jpg'); */
+    background-color: #1b2127;
+    /* width - height */
+    /* background-size: 50rem 30rem; */
+    /*evitamos que la imagen se repita*/
+    /* background-repeat: no-repeat; */
+    /*movemos a la derecha la imagen de fondo*/
+    /* background-position-x: right; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-image{
+    object-fit: cover;
+}
+
+.portfolio{
+    background-color: #fafafa;
+    padding: 2rem;
+    
+}
+
+.project{
+    background-color: white;
+    border: 0.1rem solid gray;
+    border-radius: 1rem;
+    margin: 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*aplicamos un padding - relleno de 5rem del padre con respecto del hijo*/
+    padding: 2rem;
+
+
+    /*BORDES SUS PROPIEDADES: WIDTH, STYLE, COLOR*/
+    /* border-top: 1rem solid red;
+    border-right: 1rem solid red;
+    border-bottom: 1rem solid red;
+    border-left: 1rem solid red; */
+
+    /*Otra forma de especificar un borde pero mas detallado*/
+    /* border-top-width: 1rem;
+    border-top-color: red;
+    border-top-style: solid; */
+}
+
+.project strong{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+/* .project-date{
+    margin: 1rem 0;
+}
+ */
+.project-details{
+    width: 50rem;
+}
+
+.project-title{
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.project-course, .project-date, .project-url{
+    margin: 1rem 0;
+}
+
+.project-description{
+    font-size: 2rem;
+}
+
+.project-imageContainer{
+    width: 50rem;
+}
+
+.footer{
+    display: flex;
+    color: white;
+    background-color: #1b2127;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer img{
+    vertical-align: middle;
+}
+
+.footer a{
+    color: white;
+}
+
+.event-list{
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center;
+    justify-content: space-between; */
+}
+
+.event-list-title{
+    margin-left: 2rem;
+}
+
+
+.event{
+    margin: 1rem;
+    width: 48rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #f4fbff;
+}
+
+.event img{
+    width: 48rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.event-detail{
+    margin: 2rem 4rem;
+    background-color: white;
+    position: relative;
+    margin-top: -4rem;
+    text-align: center;
+}
+
+.event-description{
+    text-align: left;
+}
+
+.event-url{
+    border: 0.1rem solid #056fff;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    color: #056fff;
+    border-radius: 0.5rem;
+}
+
+.contact{
+    background-color: #056fff;
+    color: white;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social{
+    /*border: 1px solid red;*/
+}
+
+.social-link{
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    margin: 0 1rem;
+    /*border: 1px solid white; -> valores para depurar el css*/
+    background-size: 5rem 5rem;
+}
+
+.social-link.twitter{
+    background-image: url(../images/twitter.svg);
+}
+
+.social-link.facebook{
+    background-image: url(../images/facebook.svg);
+}
+
+.social-link.github{
+    background-image: url(../images/github.svg);
+}
+
+.social-link.instagram{
+    background-image: url(../images/instagram.svg);
+}
+
+.form-email input{
+    border: gray;
+    border-radius: 0.5rem;
+    border-style: solid;
+    padding: 1rem 2rem 1rem 2.5rem;
+    background-image: url(../images/envelope.svg);
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 0.5rem;
+}
+
+.form-email button{
+    display: block;
+    background: transparent;
+    color: white;
+    padding: 0.5rem 0rem;
+    width: 10rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+.form-email h3{
+    font-family: 'Source Sans Pro', sans-serif;
+}
