@@ -63,6 +63,7 @@ figure{
     color: white;
     height: 7rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     height: 9rem;
@@ -70,7 +71,7 @@ figure{
 
 .container{
     /* border: 0.1rem solid red; */
-    width: 100rem;
+    max-width: 100rem;
     margin: 0 auto;
     height: inherit;
     display: inherit;
@@ -112,6 +113,7 @@ figure{
     /*movemos a la derecha la imagen de fondo*/
     /* background-position-x: right; */
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -133,6 +135,7 @@ figure{
     margin: 1rem;
     margin-bottom: 1.5rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     /*aplicamos un padding - relleno de 5rem del padre con respecto del hijo*/
@@ -183,6 +186,7 @@ figure{
 
 .footer{
     display: flex;
+    flex-wrap: wrap;
     color: white;
     background-color: #1b2127;
     align-items: center;
@@ -249,6 +253,7 @@ figure{
     color: white;
     height: 15rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -306,4 +311,24 @@ figure{
 
 .form-email h3{
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*====DESTOP FIRST: APLICAMOS ESTILOS CUANDO LA DIMENSION DE LA PANTALLA ES MENOR O HASTA 1024PX===*/
+@media screen and (max-width: 1024px){
+    
+}
+
+/*====DESTOP FIRST: APLICAMOS ESTILOS CUANDO LA DIMENSION DE LA PANTALLA ES MENOR O HASTA 768PX===*/
+@media screen and (max-width: 768px){
+    
+}
+
+/*====DESTOP FIRST: APLICAMOS ESTILOS CUANDO LA DIMENSION DE LA PANTALLA ES MENOR O HASTA 480PX===*/
+@media screen and (max-width: 480px){
+    
+}
+
+/*====DESTOP FIRST: APLICAMOS ESTILOS CUANDO LA DIMENSION DE LA PANTALLA ES MENOR O HASTA 320PX===*/
+@media screen and (max-width: 320px){
+    
 }
