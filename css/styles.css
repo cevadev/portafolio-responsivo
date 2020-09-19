@@ -72,6 +72,8 @@ figure{
 .container{
     /* border: 0.1rem solid red; */
     max-width: 100rem;
+    /* width: 100%; */
+    flex: 1;
     margin: 0 auto;
     height: inherit;
     display: inherit;
@@ -313,22 +315,41 @@ figure{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-/*====DESTOP FIRST: APLICAMOS ESTILOS CUANDO LA DIMENSION DE LA PANTALLA ES MENOR O HASTA 1024PX===*/
+/*====DESKTOP FIRST: APLICAMOS ESTILOS CUANDO LA DIMENSION DE LA PANTALLA ES MENOR O HASTA 1024PX===*/
 @media screen and (max-width: 1024px){
     
 }
 
-/*====DESTOP FIRST: APLICAMOS ESTILOS CUANDO LA DIMENSION DE LA PANTALLA ES MENOR O HASTA 768PX===*/
-@media screen and (max-width: 768px){
-    
+/*====DESKTOP FIRST: APLICAMOS ESTILOS CUANDO LA DIMENSION DE LA PANTALLA ES MENOR O HASTA 768PX===*/
+@media screen and (max-width: 767px){
+    .header{
+        display: block;
+        height: auto;
+    }
+
+    .header ol{
+        display: block;
+    }
+
+    .header ol li{
+        height: 5rem;
+    }
+
+    .header a{
+        justify-content: center;
+    }
+
+    .header .logo{
+        text-align: center;
+    }
 }
 
-/*====DESTOP FIRST: APLICAMOS ESTILOS CUANDO LA DIMENSION DE LA PANTALLA ES MENOR O HASTA 480PX===*/
+/*====DESKTOP FIRST: APLICAMOS ESTILOS CUANDO LA DIMENSION DE LA PANTALLA ES MENOR O HASTA 480PX===*/
 @media screen and (max-width: 480px){
     
 }
 
-/*====DESTOP FIRST: APLICAMOS ESTILOS CUANDO LA DIMENSION DE LA PANTALLA ES MENOR O HASTA 320PX===*/
+/*====DESKTOP FIRST: APLICAMOS ESTILOS CUANDO LA DIMENSION DE LA PANTALLA ES MENOR O HASTA 320PX===*/
 @media screen and (max-width: 320px){
     
 }
