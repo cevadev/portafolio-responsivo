@@ -165,7 +165,7 @@ figure{
 }
  */
 .project-details{
-    width: 50rem;
+    width: 50%;
 }
 
 .project-title{
@@ -183,7 +183,11 @@ figure{
 }
 
 .project-imageContainer{
-    width: 50rem;
+    width: 50%;
+}
+
+.project-imageContainer img{
+    max-width: 100%;
 }
 
 .footer{
@@ -342,11 +346,43 @@ figure{
     .header .logo{
         text-align: center;
     }
+
+    .project{
+        display: block;
+    }
+
+    .project-details{
+        width: auto;
+        font-size: 1.6rem;
+    }
+
+    .project-title{
+        font-size: 2.4rem;
+    }
+    .project-url{
+        font-size: 1.6rem;
+    }
+    .project-course{
+        font-size: 1.3rem;
+    }
+    .project-date{
+        font-size: 1.6rem;
+    }
+    .project-description{
+        font-size: 1.4rem;
+    }
+
+    .project-imageContainer{
+        width: auto;
+        text-align: center;
+    }
 }
 
 /*====DESKTOP FIRST: APLICAMOS ESTILOS CUANDO LA DIMENSION DE LA PANTALLA ES MENOR O HASTA 480PX===*/
 @media screen and (max-width: 480px){
-    
+    .project-details{
+        font-size: 1.2rem;
+    }
 }
 
 /*====DESKTOP FIRST: APLICAMOS ESTILOS CUANDO LA DIMENSION DE LA PANTALLA ES MENOR O HASTA 320PX===*/
