@@ -171,11 +171,11 @@ figure{
 .project-title{
     font-size: 3rem;
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: .3rem;
 }
 
 .project-course, .project-date, .project-url{
-    margin: 1rem 0;
+    margin: .4rem 0;
 }
 
 .project-description{
@@ -220,8 +220,8 @@ figure{
 
 
 .event{
-    margin: 1rem;
-    width: 48rem;
+    margin: 1%;
+    width: 48%;
     flex-shrink: 0;
     border-radius: 1rem;
     overflow: hidden;
@@ -321,7 +321,9 @@ figure{
 
 /*====DESKTOP FIRST: APLICAMOS ESTILOS CUANDO LA DIMENSION DE LA PANTALLA ES MENOR O HASTA 1024PX===*/
 @media screen and (max-width: 1024px){
-    
+    .container{
+        padding: 0 1.6rem;
+    }
 }
 
 /*====DESKTOP FIRST: APLICAMOS ESTILOS CUANDO LA DIMENSION DE LA PANTALLA ES MENOR O HASTA 768PX===*/
@@ -376,12 +378,47 @@ figure{
         width: auto;
         text-align: center;
     }
+
+    .event{
+        width: auto;
+        flex-shrink: inherit;
+    }
+
+    .event img{
+        width: 100%;
+    }
 }
 
 /*====DESKTOP FIRST: APLICAMOS ESTILOS CUANDO LA DIMENSION DE LA PANTALLA ES MENOR O HASTA 480PX===*/
 @media screen and (max-width: 480px){
     .project-details{
         font-size: 1.2rem;
+    }
+
+    .event-detail{
+        margin: -2rem .8rem .8rem;
+        padding: 1.6rem;
+    }
+
+    .contact{
+        height: auto;
+        padding: 1.6rem 0;
+        text-align: center;
+        display: block;
+    }
+
+    .form-email button{
+        margin: 1rem auto;
+    }
+
+    .form-email h3{
+        margin-top: 0;
+    }
+
+    .footer{
+        display: block;
+        text-align: center;
+        border: .1rem solid transparent;
     }
 }
 
