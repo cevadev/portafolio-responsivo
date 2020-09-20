@@ -324,6 +324,28 @@ figure{
     .container{
         padding: 0 1.6rem;
     }
+
+    .hero{
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 3rem;
+    }
+
+    .hero-image{
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    h1{
+        font-size: 3rem;
+        z-index: 2;
+    }
 }
 
 /*====DESKTOP FIRST: APLICAMOS ESTILOS CUANDO LA DIMENSION DE LA PANTALLA ES MENOR O HASTA 768PX===*/
@@ -424,5 +446,12 @@ figure{
 
 /*====DESKTOP FIRST: APLICAMOS ESTILOS CUANDO LA DIMENSION DE LA PANTALLA ES MENOR O HASTA 320PX===*/
 @media screen and (max-width: 320px){
-    
+    h1{
+        font-size: 2rem;
+    }
+
+    .hero{
+        padding: 2rem 1rem;
+        text-shadow: 1rem 2rem 2rem #000;
+    }
 }
